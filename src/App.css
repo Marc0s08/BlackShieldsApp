@@ -6,7 +6,7 @@
 h1 {
   color: #fff;
   background-color: #1f8ecd;
-  padding: 10px;
+  padding: 2vw; /* Ajuste de acordo com a largura da viewport */
 }
 
 .tables-container {
@@ -16,16 +16,13 @@ h1 {
 
 table {
   border-collapse: collapse;
-  width: 50%;
-}
-
-.left-table {
-  margin-right: 10px;
+  width: 90%; /* Ajuste de acordo com a largura da viewport */
+  max-width: 600px; /* Largura máxima */
 }
 
 th, td {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 2vw; /* Ajuste de acordo com a largura da viewport */
 }
 
 th {
@@ -42,8 +39,8 @@ tr:hover {
 }
 
 .logo img {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 20vw; /* Ajuste de acordo com a largura da viewport */
+  max-height: 20vw; /* Ajuste de acordo com a largura da viewport */
   border-radius: 50%;
 }
 
@@ -51,8 +48,31 @@ tr:hover {
   font-weight: bold;
   color: rgb(59, 255, 134);
 }
+
 button {
   color: #fff;
   background-color: #1f8ecd;
-  padding: 10px;
+  padding: 3vw; /* Ajuste de acordo com a largura da viewport */
+  border: none;
+  cursor: pointer;
+}
+
+/* Adicione regras de mídia para ajustar o layout em diferentes tamanhos de tela */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 4vw; /* Ajuste de acordo com a largura da viewport */
+  }
+
+  table {
+    width: 95%; /* Ajuste de acordo com a largura da viewport */
+  }
+
+  th, td {
+    padding: 3vw; /* Ajuste de acordo com a largura da viewport */
+  }
+
+  .logo img {
+    max-width: 30vw; /* Ajuste de acordo com a largura da viewport */
+    max-height: 30vw; /* Ajuste de acordo com a largura da viewport */
+  }
 }
