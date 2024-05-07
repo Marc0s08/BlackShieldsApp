@@ -1,3 +1,4 @@
+/* App.css */
 .App {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -6,23 +7,42 @@
 h1 {
   color: #fff;
   background-color: #1f8ecd;
-  padding: 2vw; /* Ajuste de acordo com a largura da viewport */
+  padding: 10px;
 }
 
-.tables-container {
+.buttons-container {
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
+  justify-content: space-around; /* Alinhar os botões horizontalmente */
+  flex-wrap: wrap; /* Permitir que os botões quebrem para a próxima linha se não houver espaço suficiente */
+}
+
+.buttons-container a {
+  text-decoration: none; /* Remover sublinhado dos links */
+}
+
+button {
+  color: #fff;
+  background-color: #1f8ecd;
+  padding: 10px;
+  margin: 10px; /* Adicionar margem entre os botões */
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para a tabela */
+.tables-container {
+  overflow-x: auto; /* Adicionar barra de rolagem horizontal se a tabela ultrapassar a largura da tela */
 }
 
 table {
   border-collapse: collapse;
-  width: 90%; /* Ajuste de acordo com a largura da viewport */
-  max-width: 600px; /* Largura máxima */
+  width: 100%; /* Tornar a tabela ocupar 100% da largura do contêiner */
 }
 
 th, td {
   border: 1px solid #ddd;
-  padding: 2vw; /* Ajuste de acordo com a largura da viewport */
+  padding: 8px;
+  text-align: center;
 }
 
 th {
@@ -39,40 +59,12 @@ tr:hover {
 }
 
 .logo img {
-  max-width: 20vw; /* Ajuste de acordo com a largura da viewport */
-  max-height: 20vw; /* Ajuste de acordo com a largura da viewport */
+  max-width: 50px;
+  max-height: 50px;
   border-radius: 50%;
 }
 
 .MVP {
   font-weight: bold;
   color: rgb(59, 255, 134);
-}
-
-button {
-  color: #fff;
-  background-color: #1f8ecd;
-  padding: 3vw; /* Ajuste de acordo com a largura da viewport */
-  border: none;
-  cursor: pointer;
-}
-
-/* Adicione regras de mídia para ajustar o layout em diferentes tamanhos de tela */
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 4vw; /* Ajuste de acordo com a largura da viewport */
-  }
-
-  table {
-    width: 95%; /* Ajuste de acordo com a largura da viewport */
-  }
-
-  th, td {
-    padding: 3vw; /* Ajuste de acordo com a largura da viewport */
-  }
-
-  .logo img {
-    max-width: 30vw; /* Ajuste de acordo com a largura da viewport */
-    max-height: 30vw; /* Ajuste de acordo com a largura da viewport */
-  }
 }
