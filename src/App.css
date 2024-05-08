@@ -1,3 +1,5 @@
+/* App.css */
+
 /* Estilos gerais */
 .App {
   font-family: Arial, sans-serif;
@@ -6,8 +8,8 @@
 
 /* Estilos para o cabeçalho */
 h1 {
-  color: #ffffff; /* Branco */
-  background-color: #1c1c1c; /* Cinza escuro */
+  color: #fff;
+  background-color: #1f8ecd;
   padding: 10px;
   margin: 0; /* Remover margem padrão do h1 */
 }
@@ -25,8 +27,8 @@ h1 {
 }
 
 button {
-  color: #ffffff; /* Branco */
-  background-color: #1c1c1c; /* Cinza escuro */
+  color: #fff;
+  background-color: #1f8ecd;
   padding: 10px 20px; /* Adicionar mais espaço interno aos botões */
   border: none;
   cursor: pointer;
@@ -44,22 +46,22 @@ table {
 }
 
 th, td {
-  border: 1px solid #ccc; /* Cinza claro */
+  border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
 }
 
 th {
-  background-color: #1c1c1c; /* Cinza escuro */
-  color: #ffffff; /* Branco */
+  background-color: #1f8ecd;
+  color: #fff;
 }
 
 tr:nth-child(even) {
-  background-color: #2d2d2d; /* Cinza um pouco mais claro */
+  background-color: #f2f2f2;
 }
 
 tr:hover {
-  background-color: #333333; /* Cinza médio */
+  background-color: #ddd;
 }
 
 .logo img {
@@ -70,5 +72,5 @@ tr:hover {
 
 .MVP {
   font-weight: bold;
-  color: #00ff00; /* Verde */
+  color: rgb(59, 255, 134);
 }
