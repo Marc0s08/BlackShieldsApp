@@ -1,22 +1,16 @@
 import React from 'react';
-import './App.css';
+import './App.css'; // Se necessário
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection } from 'firebase/firestore';
 import Page1 from './telas/Page1';
 import Page2 from './telas/Page2';
 import Page3 from './telas/Page3';
+import logo from './assets/logo.jpg'; // Importe a imagem da logo
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD6yHbRF47f9TWUM80y3FSD1ylOFEr6JXg",
-  authDomain: "black-shields.firebaseapp.com",
-  projectId: "black-shields",
-  storageBucket: "black-shields.appspot.com",
-  messagingSenderId: "36610876059",
-  appId: "1:36610876059:web:5343e879320520c93a9c3e",
-  measurementId: "G-WJNR5S7VND"
+  // Configuração do Firebase
 };
-
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
@@ -26,6 +20,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <img src={logo} alt="Logo" /> {/* Use a imagem da logo aqui */}
         <h1>Tabela de Pontos</h1>
         <div className="buttons-container">
           <Link to="/page1"><button>Black Shields</button></Link>
