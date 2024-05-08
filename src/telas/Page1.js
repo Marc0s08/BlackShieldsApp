@@ -20,12 +20,11 @@ function Page1({ playersCollection }) {
 
   return (
     <div className="App">
-      <h1>Tabela de Pontos - Página 1</h1>
+      <h1>Black Shields</h1>
       <div className="tables-container">
         <table className="left-table">
           <thead>
             <tr>
-              <th>Logo</th>
               <th>Nickname</th>
               <th>Abates</th>
               <th>Mortes</th>
@@ -38,7 +37,6 @@ function Page1({ playersCollection }) {
           <tbody>
             {playersData.map((player) => (
               <tr key={player.id}>
-                <td className="logo"><img src={player.logo} alt={player.nickname} /></td>
                 <td>{player.nickname}</td>
                 <td>{player.kills}</td>
                 <td>{player.deaths}</td>
