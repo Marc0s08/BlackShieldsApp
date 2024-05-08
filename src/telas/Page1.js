@@ -48,6 +48,33 @@ function Page1({ playersCollection }) {
             ))}
           </tbody>
         </table>
+
+        <table className="left-table">
+          <thead>
+            <tr>
+              <th>Nickname</th>
+              <th>Abates</th>
+              <th>Mortes</th>
+              <th>Assistências</th>
+              <th>Conquistas</th>
+              <th>MVP</th>
+              <th>Pontuação</th>
+            </tr>
+          </thead>
+          <tbody>
+            {playersData.map((player) => (
+              <tr key={player.id}>
+                <td>{player.nickname}</td>
+                <td>{player.kills}</td>
+                <td>{player.deaths}</td>
+                <td>{player.assists}</td>
+                <td>{player.achievements}</td>
+                <td className={player.mvp ? 'MVP' : ''}>{player.mvp ? 'Sim' : 'Não'}</td>
+                <td>{calculateScore(player)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );
