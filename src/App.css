@@ -11,7 +11,7 @@ h1 {
   color: #fff;
   background-color: #1f8ecd;
   padding: 10px;
-  margin: 0; /* Remover margem padrão do h1 */
+  margin: 0; 
 }
 
 /* Estilos para os botões */
