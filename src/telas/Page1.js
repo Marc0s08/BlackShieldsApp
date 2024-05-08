@@ -21,6 +21,7 @@ function Page1({ playersCollection }) {
   return (
     <div className="App">
       <h1>Black Shields</h1>
+      <h1>06/05/2024</h1>
       <div className="tables-container">
         <table className="left-table">
           <thead>
@@ -48,7 +49,7 @@ function Page1({ playersCollection }) {
             ))}
           </tbody>
         </table>
-
+        <h1>Jogo 2</h1>
         <table className="left-table">
           <thead>
             <tr>
