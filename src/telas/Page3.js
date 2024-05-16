@@ -20,7 +20,7 @@ function Page3({ playersCollection }) {
 
   return (
     <div className="App">
-      <h1>Black Shields Line2</h1>
+      <h1>Tournement</h1>
       <div className="tables-container">
         <table className="left-table">
           <thead>
