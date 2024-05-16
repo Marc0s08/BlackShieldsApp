@@ -6,6 +6,7 @@ import { getFirestore, collection } from 'firebase/firestore';
 import Page1 from './telas/Page1';
 import Page2 from './telas/Page2';
 import Page3 from './telas/Page3';
+import Page4 from './telas/Page4';
 
 const firebaseConfig = {
   apiKey: "AIzaSyD6yHbRF47f9TWUM80y3FSD1ylOFEr6JXg",
@@ -31,12 +32,14 @@ function App() {
           <Link to="/page1"><button>Black Shields</button></Link>
           <Link to="/page2"><button>UDFive</button></Link>
           <Link to="/page3"><button>Black Shields 2</button></Link>
+          <Link to="/page4"><button>Tournement de X1</button></Link>
         </div>
       </div>
       <Routes>
         <Route path="/page1" exact element={<Page1 playersCollection={playersCollection} />} />
         <Route path="/page2" exact element={<Page2 playersCollection={collection(db, 'players2')} />} />
         <Route path="/page3" exact element={<Page3 playersCollection={collection(db, 'players3')} />} />
+        <Route path="/page4" exact element={<Page3 playersCollection={collection(db, 'players4')} />} />
       </Routes>
     </Router>
   );
